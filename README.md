@@ -23,7 +23,7 @@ Package with tools to flash 64-bit LOLLIPOP factory images on YUPHORIA
   d. You can let go off the Volume Up key when Fastboot Mode is displayed on the screen    
 
  7. Run flash_all.sh in terminal (as root). The flashing process will start normally.
-      (in terminal <code>cd</code> to the folder and do <code>sudo ./flash.all.sh</code>)
+      (in terminal <code>cd</code> to the folder and do <code>sudo ./flash_all.sh</code>)
 
  8. <b>DO NOT</b> disconnect the device during flashing procedure!
 
