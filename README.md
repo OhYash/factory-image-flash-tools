@@ -3,31 +3,33 @@ Package with tools to flash 64-bit LOLLIPOP factory images on YUPHORIA
 
 ## How to
 ### Steps to flash factory image
- 1. Download the LOLLIPOP factory image fastboot package for YU YUPHORIA from [Here](https://cyngn.com/support/)
+ 1. Install fastboot in your system. 
+      (<code>sudo apt install android-tools-fastboot</code> for Ubuntu)
+      
+ 2. Download the LOLLIPOP factory image fastboot package for YU YUPHORIA from [Here](https://cyngn.com/support/)
 
- 2. Extract the contents of the fastboot package into a folder.
+ 3. Extract the contents of the fastboot package into a folder.
 
- 3. Download this flashing tools package from [here](https://github.com/YUPlayGod/factory-image-flash-tools/archive/yuphoria-lollipop-windows-flashtools.zip)
+ 4. Download flash_all.sh from this repo.
 
- 4. Extract the contents of the flashing tools zip into the same folder    
+ 5. Copy the flash_all.sh into the same folder    
     To make sure, check that system.img, boot.img etc files are in the same
-    folder as flash-all.bat, fastboot.exe etc  
+    folder as flash_all.sh.
 
- 5. Connect your phone in fastboot mode, steps for which are : -   
+ 6. Connect your phone in fastboot mode, steps for which are : -   
   a. Power off your phone    
   b. Press and hold the Volume Up key    
   c. With the Volume Up key, connect the phone to your PC/Laptop with USB cable   
   d. You can let go off the Volume Up key when Fastboot Mode is displayed on the screen    
 
- 6. Run flash-all.bat by double clicking on it.  
+ 7. Run flash_all.sh in terminal (as root). The flashing process will start normally.
+      (in terminal <code>cd</code> to the folder and do <code>sudo ./flash.all.sh</code>)
 
- 7. A command window will open and flashing procedure will start  
+ 8. <b>DO NOT</b> disconnect the device during flashing procedure!
 
- 8. <b>DO NOT</b> disconnect the device during flashing procedure
+ 9. You'll see a completion message when the flashing process is over.
 
- 9. The command window will close after the flashing process is over.
-
- 10. Disconnect the USB cable, and boot the phone normally by long pressing the Power button.    
+ 10. The phone will automatically reboot once the flashing process is over, Disconnect the USB.
 
 #### 3rd Party Licenses
 
